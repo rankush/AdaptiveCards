@@ -12,7 +12,7 @@ namespace AdaptiveCards::Rendering::Uwp
     }
 
     LinkButtonAutomationPeer::LinkButtonAutomationPeer(LinkButton& linkButton) :
-        ::winrt::Windows::UI::Xaml::Automation::Peers::ButtonAutomationPeerT<LinkButtonAutomationPeer>(
+        ::winrt::ButtonAutomationPeerT<LinkButtonAutomationPeer>(
             linkButton.operator winrt::Button())
     {
     }

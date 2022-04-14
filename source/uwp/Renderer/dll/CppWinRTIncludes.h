@@ -17,24 +17,24 @@
 #include <winrt/AdaptiveCards.ObjectModel.Uwp.h>
 
 #include <winrt/Windows.UI.Text.h>
-#include <winrt/Windows.UI.Xaml.Automation.h>
-#include <winrt/Windows.UI.Xaml.Documents.h>
-#include <winrt/Windows.UI.Xaml.Input.h>
-#include <winrt/Windows.UI.Xaml.Markup.h>
-#include <winrt/Windows.UI.Xaml.Media.Imaging.h>
-#include <winrt/Windows.UI.Xaml.Shapes.h>
+#include <UI.Xaml.Automation.h>
+#include <UI.Xaml.Documents.h>
+#include <UI.Xaml.Input.h>
+#include <UI.Xaml.Markup.h>
+#include <UI.Xaml.Media.Imaging.h>
+#include <UI.Xaml.Shapes.h>
 
-#include <winrt/Windows.UI.Xaml.Automation.Peers.h>
-#include <winrt/Windows.UI.Xaml.Controls.h>
-#include <winrt/Windows.UI.Xaml.Controls.Primitives.h>
-#include <winrt/Windows.UI.Xaml.Media.h>
+#include <UI.Xaml.Automation.Peers.h>
+#include <UI.Xaml.Controls.h>
+#include <UI.Xaml.Controls.Primitives.h>
+#include <UI.Xaml.Media.h>
 
 // WinUI 2
-#include <winrt/Microsoft.UI.Xaml.XamlTypeInfo.h>
-#include <winrt/Microsoft.UI.Xaml.Automation.Peers.h>
-#include <winrt/Microsoft.UI.Xaml.Controls.h>
-#include <winrt/Microsoft.UI.Xaml.Controls.Primitives.h>
-#include <winrt/Microsoft.UI.Xaml.Media.h>
+//#include <winrt/Microsoft.UI.Xaml.XamlTypeInfo.h>
+#include <UI.Xaml.Automation.Peers.h>
+#include <UI.Xaml.Controls.h>
+#include <UI.Xaml.Controls.Primitives.h>
+#include <UI.Xaml.Media.h>
 
 namespace winrt
 {
@@ -46,19 +46,19 @@ namespace winrt
     using namespace ::winrt::AdaptiveCards::ObjectModel::Uwp;
 
     // WinUI 2
-    using namespace ::winrt::Microsoft::UI;
-	using namespace ::winrt::Microsoft::UI::Xaml;
-    using namespace ::winrt::Microsoft::UI::Xaml::Controls;
-    using namespace ::winrt::Microsoft::UI::Xaml::Controls::Primitives;
-    using namespace ::winrt::Microsoft::UI::Xaml::Automation;
-	using namespace ::winrt::Microsoft::UI::Xaml::Automation::Peers;
+    //using namespace ::winrt::Microsoft::UI;
+	//using namespace ::winrt::Microsoft::UI::Xaml;
+    //using namespace ::winrt::Microsoft::UI::Xaml::Controls;
+    //using namespace ::winrt::Microsoft::UI::Xaml::Controls::Primitives;
+    //using namespace ::winrt::Microsoft::UI::Xaml::Automation;
+	//using namespace ::winrt::Microsoft::UI::Xaml::Automation::Peers;
 
-    using namespace ::winrt::Windows::UI::Xaml::Documents;
-    using namespace ::winrt::Windows::UI::Xaml::Input;
-    using namespace ::winrt::Windows::UI::Xaml::Markup;
-    using namespace ::winrt::Windows::UI::Xaml::Media::Imaging;
-    using namespace ::winrt::Windows::UI::Xaml::Shapes;
-    
+    //using namespace ::winrt::Windows::UI::Xaml::Documents;
+    //using namespace ::winrt::Windows::UI::Xaml::Input;
+    //using namespace ::winrt::Windows::UI::Xaml::Markup;
+    //using namespace ::winrt::Windows::UI::Xaml::Media::Imaging;
+    //using namespace ::winrt::Windows::UI::Xaml::Shapes;
+
     // In order to avoid "namespace not defined" errors we have to define the namespace here too.
 	namespace AdaptiveCards::Rendering::Uwp{}
 	using namespace ::winrt::AdaptiveCards::Rendering::Uwp;
@@ -69,6 +69,7 @@ namespace winrt
         using namespace ::winrt::AdaptiveCards::Rendering::Uwp::implementation;
     }
 
+/*
     using Brush = winrt::Windows::UI::Xaml::Media::Brush;
     using FontFamily = winrt::Windows::UI::Xaml::Media::FontFamily;
     using ImageBrush = ::winrt::Windows::UI::Xaml::Media::ImageBrush;
@@ -142,6 +143,7 @@ namespace winrt
     using IButtonWithFlyout = ::winrt::Windows::UI::Xaml::Controls::IButtonWithFlyout;
     using ToggleButton = ::winrt::Windows::UI::Xaml::Controls::Primitives::ToggleButton;
     using IFrameworkElementStatics = ::winrt::Windows::UI::Xaml::IFrameworkElementStatics;
+	*/
 
 	// using namespace winrt::Windows::Data::Json
 	using JsonObject = ::winrt::Windows::Data::Json::JsonObject;
