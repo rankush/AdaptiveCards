@@ -1,0 +1,8 @@
+namespace AdaptiveCards.Rendering.Uwp
+{
+	[default_interface]
+	runtimeclass DefaultActionSentimentResourceDictionary : Windows.UI.Xaml.Controls.Page
+	{
+		DefaultActionSentimentResourceDictionary();
+	}
+}
