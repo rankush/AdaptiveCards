@@ -162,21 +162,15 @@ namespace winrt::AdaptiveCards::Rendering::Uwp::implementation
 
     void AdaptiveCardRenderer::InitializeDefaultResourceDictionary()
     {
-        // Old code:
-        //auto resourceDictionary = winrt::XamlReader::Load(c_defaultResourceDictionary).as<winrt::ResourceDictionary>();
-
-        // New code:
         auto resourceDictionary = winrt::ResourceDictionary();
-        resourceDictionary.Source(winrt::Uri(L"ms-appx://DefaultResourceDictionary.xaml"));
-
-        // END New code
+        //resourceDictionary.Source(winrt::Uri(L"ms-appx://DefaultResourceDictionary.xaml"));
         resourceDictionary.MergedDictionaries().Append(winrt::XamlControlsResources());
         m_mergedResourceDictionary = resourceDictionary;
         m_defaultResourceDictionary = resourceDictionary;
 
         //auto actionSentimentResourceDictionary = winrt::XamlReader::Load(c_defaultActionSentimentResourceDictionary).as<winrt::ResourceDictionary>();
         auto actionSentimentResourceDictionary = winrt::ResourceDictionary();
-        actionSentimentResourceDictionary.Source(winrt::Uri(L"ms-appx://DefaultActionSentimentResourceDictionary.xaml")); 
+        //actionSentimentResourceDictionary.Source(winrt::Uri(L"ms-appx://DefaultActionSentimentResourceDictionary.xaml")); 
         m_actionSentimentResourceDictionary = actionSentimentResourceDictionary;
         m_actionSentimentResourceDictionary.MergedDictionaries().Append(winrt::XamlControlsResources());
     }

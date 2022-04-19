@@ -3,7 +3,7 @@
 
 #pragma once
 
-#include "DefaultActionSentimentResourceDictionary.g.h"
+#include "DefaultActionSentimentResourceDictionary.xaml.g.h"
 
 namespace winrt::AdaptiveCards::Rendering::Uwp::implementation
 {

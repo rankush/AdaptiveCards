@@ -219,6 +219,12 @@ namespace AdaptiveCards::Rendering::Uwp::ActionHelpers
                 {
                     buttonFrameworkElement.Style(positiveActionDefaultStyle);
                 }
+                else
+                {
+                    auto positiveActionRD = winrt::ResourceDictionary();
+                    positiveActionRD.Source(winrt::Uri(L"ms-appx:///PositiveActionDefaultStyle.xaml"));
+                    buttonFrameworkElement.Resources(positiveActionRD);
+                }
             }
         }
         else if (actionSentiment == L"destructive")

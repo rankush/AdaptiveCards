@@ -229,10 +229,9 @@
     <ClInclude Include="lib\AdaptiveActionEventArgs.h" />
     <ClInclude Include="lib\AdaptiveFactSetTextConfig.h" />
     <ClInclude Include="lib\AsyncOperations.h" />
-    <ClInclude Include="lib\DefaultActionSentimentResourceDictionary.h">
-        <DependentUpon>DefaultActionSentimentResourceDictionary.xaml</DependentUpon>
-        <SubType>Code</SubType>
-    </ClInclude>
+    <!-- <ClInclude Include="lib\DefaultActionSentimentResourceDictionary.h">
+      <DependentUpon>DefaultActionSentimentResourceDictionary.xaml</DependentUpon>
+    </ClInclude> -->
     <ClInclude Include="lib\IImageLoadTrackerListener.h" />
     <ClInclude Include="lib\ImageLoadTracker.h" />
     <ClInclude Include="lib\IXamlBuilderListener.h" />
@@ -331,26 +330,31 @@
     <ClCompile Include="lib\AdaptiveImageSetConfig.cpp" />
     <ClCompile Include="lib\AdaptiveActionEventArgs.cpp" />
     <ClCompile Include="lib\AdaptiveFactSetTextConfig.cpp" />
-    <ClCompile Include="lib\DefaultActionSentimentResourceDictionary.cpp">
-        <DependentUpon>DefaultActionSentimentResourceDictionary.xaml</DependentUpon>
-        <SubType>Code</SubType>
-    </ClCompile>
+    <!-- <ClCompile Include="lib\DefaultActionSentimentResourceDictionary.cpp">
+      <DependentUpon>DefaultActionSentimentResourceDictionary.xaml</DependentUpon>
+    </ClCompile> -->
     <ClCompile Include="lib\ImageLoadTracker.cpp" />
     <ClCompile Include="lib\TileControl.cpp" />
     <ClCompile Include="lib\Util.cpp" />
     <ClCompile Include="lib\WholeItemsPanel.cpp" />
     <ClCompile Include="lib\XamlBuilder.cpp" />
   </ItemGroup>
-  <ItemGroup>
+  <!-- <ItemGroup>
     <Midl Include="lib\DefaultActionSentimentResourceDictionary.idl">
-        <DependentUpon>DefaultActionSentimentResourceDictionary.xaml</DependentUpon>
-        <SubType>Code</SubType>
+      <DependentUpon>DefaultActionSentimentResourceDictionary.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Midl>
-  </ItemGroup>
+  </ItemGroup> -->
   <ItemGroup>
-    <Page Include="lib\DefaultActionSentimentResourceDictionary.xaml">
-        <SubType>Designer</SubType>
-    </Page>
+    <!-- <Page Include="lib\DefaultActionSentimentResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page> -->
+    <Page Include="lib\DestructiveActionDefaultStyle.xaml">
+		<DeploymentContent>true</DeploymentContent>
+	</Page>
+    <Page Include="lib\PositiveActionDefaultStyle.xaml">
+		<DeploymentContent>true</DeploymentContent>
+	</Page>
     <!-- <ClInclude Include="lib\DefaultActionSentimentResourceDictionary.xaml" /> -->
   </ItemGroup>
   <ItemGroup>
